@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ==================== SEO META TAGS ==================== -->
+<title>IronPulse Fitness | Premium Gym & Personal Training Studio</title>
+<meta name="description" content="IronPulse Fitness is a premium gym offering strength training, weight loss coaching, CrossFit, yoga and more. Certified trainers, modern equipment, flexible memberships. Join today.">
+<meta name="keywords" content="gym, fitness center, personal training, strength training, weight loss, crossfit, yoga, bodybuilding, IronPulse">
+<meta name="author" content="IronPulse Fitness">
+<link rel="canonical" href="https://www.ironpulsefitness.com/">
+
+<!-- ==================== OPEN GRAPH ==================== -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="IronPulse Fitness | Build Your Dream Body">
+<meta property="og:description" content="Professional training for strength, muscle gain, weight loss and fitness. Certified trainers, modern equipment, 24/7 access.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:url" content="https://www.ironpulsefitness.com/">
+<meta property="og:site_name" content="IronPulse Fitness">
+
+<!-- ==================== TWITTER CARD ==================== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IronPulse Fitness | Build Your Dream Body">
+<meta name="twitter:description" content="Professional training for strength, muscle gain, weight loss and fitness.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+
+<!-- ==================== SCHEMA MARKUP ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "IronPulse Fitness",
+  "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+  "telephone": "+1-555-010-2024",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "221 Ironwood Avenue",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "73301",
+    "addressCountry": "US"
+  },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "url": "https://www.ironpulsefitness.com/"
+}
+</script>
+
+<!-- ==================== FAVICON ==================== -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23ff4d00'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+
+<!-- ==================== FONTS ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ==================== FONT AWESOME ==================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ==================== STYLESHEET ==================== -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== SCROLL PROGRESS BAR ==================== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ==================== NAVBAR ==================== -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+      <span class="logo-text">IRON<span class="accent-text">PULSE</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#programs" class="nav-link">Programs</a>
+      <a href="#trainers" class="nav-link">Trainers</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#pricing" class="btn btn-primary nav-cta">Join Now</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ==================== MOBILE MENU OVERLAY ==================== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#programs" class="mobile-link">Programs</a>
+  <a href="#trainers" class="mobile-link">Trainers</a>
+  <a href="#pricing" class="mobile-link">Pricing</a>
+  <a href="#gallery" class="mobile-link">Gallery</a>
+  <a href="#testimonials" class="mobile-link">Testimonials</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#pricing" class="btn btn-primary mobile-cta">Join Now</a>
+</div>
+
+<main>
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80" alt="Athlete training with heavy ropes inside IronPulse Fitness gym">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="eyebrow reveal-up">Austin&rsquo;s Premium Training Ground</span>
+    <h1 class="hero-title reveal-up">
+      BUILD YOUR<br>
+      <span class="accent-text" id="typingText">DREAM BODY</span><span class="cursor">|</span>
+    </h1>
+    <p class="hero-subtitle reveal-up">Professional training for strength, muscle gain, weight loss, and fitness &mdash; guided by elite coaches, powered by relentless results.</p>
+
+    <div class="hero-buttons reveal-up">
+      <a href="#pricing" class="btn btn-primary btn-lg ripple">Join Today</a>
+      <a href="#programs" class="btn btn-outline btn-lg ripple">Explore Programs</a>
+    </div>
+
+    <div class="hero-stats reveal-up">
+      <div class="stat-item">
+        <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+        <span class="stat-label">Members</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="35" data-suffix="+">0</span>
+        <span class="stat-label">Expert Trainers</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="12" data-suffix="+">0</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number" data-decimal="4.9" data-suffix="&#9733;">0</span>
+        <span class="stat-label">Rating</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+    <span class="scroll-text">Scroll</span>
+  </a>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-image reveal-left">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="IronPulse Fitness gym floor with modern strength equipment" loading="lazy">
+      <div class="about-image-badge">
+        <span class="badge-number">12+</span>
+        <span class="badge-label">Years of Excellence</span>
+      </div>
+    </div>
+
+    <div class="about-content reveal-right">
+      <span class="eyebrow">Who We Are</span>
+      <h2 class="section-title">More Than A Gym. <span class="accent-text">A Movement.</span></h2>
+      <p class="section-text">IronPulse Fitness was founded on one belief: every body deserves expert guidance to become its strongest self. What started as a single training floor has grown into Austin&rsquo;s most trusted performance community.</p>
+
+      <div class="mission-vision">
+        <div class="mv-block">
+          <i class="fa-solid fa-bullseye"></i>
+          <div>
+            <h4>Our Mission</h4>
+            <p>Deliver science-backed coaching and a judgment-free environment where progress is inevitable.</p>
+          </div>
+        </div>
+        <div class="mv-block">
+          <i class="fa-solid fa-eye"></i>
+          <div>
+            <h4>Our Vision</h4>
+            <p>To be the benchmark for premium fitness experiences across the country.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="why-title">Why Choose IronPulse</h3>
+      <div class="feature-cards">
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-medal"></i>
+          <span>Certified Trainers</span>
+        </div>
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-dumbbell"></i>
+          <span>Latest Equipment</span>
+        </div>
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-apple-whole"></i>
+          <span>Nutrition Plans</span>
+        </div>
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-user-check"></i>
+          <span>Personal Coaching</span>
+        </div>
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-clock"></i>
+          <span>Open 24/7</span>
+        </div>
+        <div class="feature-card reveal-up">
+          <i class="fa-solid fa-tags"></i>
+          <span>Affordable Membership</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROGRAMS SECTION ==================== -->
+<section class="programs" id="programs">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Training Programs</span>
+      <h2 class="section-title">Find Your <span class="accent-text">Discipline</span></h2>
+      <p class="section-text">Eight specialized programs, one goal: your transformation.</p>
+    </div>
+
+    <div class="programs-grid">
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=700&q=80" alt="Strength training with barbell" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Strength Training</h3>
+          <p>Build raw power with progressive overload programming tailored to your level.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Weight loss training session" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Weight Loss</h3>
+          <p>Metabolic conditioning and nutrition coaching designed for sustainable fat loss.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=700&q=80" alt="CrossFit style functional workout" loading="lazy"></div>
+        <div class="program-body">
+          <h3>CrossFit</h3>
+          <p>High-intensity functional movements performed at max effort in a team setting.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="Yoga and mobility class" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Yoga</h3>
+          <p>Restore mobility, balance and mental clarity between heavy training sessions.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" alt="Bodybuilding muscle hypertrophy training" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Bodybuilding</h3>
+          <p>Hypertrophy-focused splits and posing coaching for competition-ready physiques.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80" alt="Cardio endurance training on track" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Cardio</h3>
+          <p>Build endurance and cardiovascular health with structured interval sessions.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80" alt="Functional training with kettlebells" loading="lazy"></div>
+        <div class="program-body">
+          <h3>Functional Training</h3>
+          <p>Real-world strength and movement patterns using kettlebells, sleds and sandbags.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="program-card reveal-up">
+        <div class="program-img"><img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=700&q=80" alt="High intensity interval training class" loading="lazy"></div>
+        <div class="program-body">
+          <h3>HIIT</h3>
+          <p>Short, brutal intervals engineered to torch calories and boost conditioning fast.</p>
+          <a href="#contact" class="program-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WHY CHOOSE US SECTION ==================== -->
+<section class="why-choose" id="why">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">The IronPulse Standard</span>
+      <h2 class="section-title">Why Members <span class="accent-text">Stay For Years</span></h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h4>Professional Trainers</h4>
+        <p>Certified coaches with real competitive and clinical experience.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-carrot"></i></div>
+        <h4>Diet Plans</h4>
+        <p>Custom nutrition blueprints built around your goals and lifestyle.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h4>Modern Equipment</h4>
+        <p>Premium strength machines and free weights, always well maintained.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-calendar-check"></i></div>
+        <h4>Flexible Timings</h4>
+        <p>Open around the clock so training fits your schedule, not the other way.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+        <h4>Hygienic Environment</h4>
+        <p>Hospital-grade cleaning protocols across every station, every day.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+        <h4>Affordable Fees</h4>
+        <p>Transparent pricing with no hidden charges or long-term traps.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-people-arrows"></i></div>
+        <h4>Personal Coach</h4>
+        <p>One-on-one accountability sessions built into every membership tier.</p>
+      </div>
+      <div class="why-card reveal-up">
+        <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Progress Tracking</h4>
+        <p>Body composition scans and strength benchmarks logged every month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TRAINERS SECTION ==================== -->
+<section class="trainers" id="trainers">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Meet The Coaches</span>
+      <h2 class="section-title">Trained By <span class="accent-text">The Best</span></h2>
+    </div>
+
+    <div class="trainers-grid">
+      <div class="trainer-card reveal-up">
+        <div class="trainer-photo">
+          <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80" alt="Marcus Reid, head strength coach" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <h4>Marcus Reid</h4>
+        <span class="trainer-role">Head Strength Coach</span>
+        <span class="trainer-exp">10 years experience</span>
+      </div>
+
+      <div class="trainer-card reveal-up">
+        <div class="trainer-photo">
+          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80" alt="Elena Cruz, CrossFit coach" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <h4>Elena Cruz</h4>
+        <span class="trainer-role">CrossFit Coach</span>
+        <span class="trainer-exp">8 years experience</span>
+      </div>
+
+      <div class="trainer-card reveal-up">
+        <div class="trainer-photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Devon Blake, bodybuilding specialist" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <h4>Devon Blake</h4>
+        <span class="trainer-role">Bodybuilding Specialist</span>
+        <span class="trainer-exp">12 years experience</span>
+      </div>
+
+      <div class="trainer-card reveal-up">
+        <div class="trainer-photo">
+          <img src="https://images.unsplash.com/photo-1521341957697-b93449760f30?auto=format&fit=crop&w=600&q=80" alt="Priya Nair, yoga and mobility coach" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <h4>Priya Nair</h4>
+        <span class="trainer-role">Yoga &amp; Mobility Coach</span>
+        <span class="trainer-exp">7 years experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRICING SECTION ==================== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Membership Plans</span>
+      <h2 class="section-title">Simple, <span class="accent-text">Honest Pricing</span></h2>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card reveal-up">
+        <h3>Basic</h3>
+        <p class="pricing-tagline">Get started right</p>
+        <div class="price"><span class="currency">$</span>29<span class="period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Full gym floor access</li>
+          <li><i class="fa-solid fa-check"></i> Locker room access</li>
+          <li><i class="fa-solid fa-check"></i> 1 group class / week</li>
+          <li><i class="fa-solid fa-xmark disabled"></i> Personal coaching</li>
+          <li><i class="fa-solid fa-xmark disabled"></i> Nutrition plan</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline pricing-btn">Join Basic</a>
+      </div>
+
+      <div class="pricing-card featured reveal-up">
+        <span class="popular-badge">Most Popular</span>
+        <h3>Premium</h3>
+        <p class="pricing-tagline">Total transformation</p>
+        <div class="price"><span class="currency">$</span>79<span class="period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Unlimited 24/7 access</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited group classes</li>
+          <li><i class="fa-solid fa-check"></i> Weekly personal coaching</li>
+          <li><i class="fa-solid fa-check"></i> Custom nutrition plan</li>
+          <li><i class="fa-solid fa-check"></i> Monthly body scan</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary pricing-btn">Join Premium</a>
+      </div>
+
+      <div class="pricing-card reveal-up">
+        <h3>Standard</h3>
+        <p class="pricing-tagline">Train with purpose</p>
+        <div class="price"><span class="currency">$</span>49<span class="period">/mo</span></div>
+        <ul class="pricing-features">
+          <li><i class="fa-solid fa-check"></i> Full gym floor access</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited group classes</li>
+          <li><i class="fa-solid fa-check"></i> 2 coaching sessions / month</li>
+          <li><i class="fa-solid fa-check"></i> Basic nutrition guide</li>
+          <li><i class="fa-solid fa-xmark disabled"></i> Body scan</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline pricing-btn">Join Standard</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BMI CALCULATOR SECTION ==================== -->
+<section class="bmi" id="bmi">
+  <div class="container bmi-grid">
+    <div class="bmi-intro reveal-left">
+      <span class="eyebrow">Free Tool</span>
+      <h2 class="section-title">Know Your <span class="accent-text">BMI</span></h2>
+      <p class="section-text">Get an instant read on your Body Mass Index and a starting point for your goals. This is a general guide &mdash; your coach will build your real plan around your full body composition.</p>
+    </div>
+
+    <div class="bmi-card reveal-right">
+      <div class="bmi-inputs">
+        <div class="input-group">
+          <label for="bmiHeight">Height (cm)</label>
+          <input type="number" id="bmiHeight" placeholder="e.g. 175" min="50" max="272">
+        </div>
+        <div class="input-group">
+          <label for="bmiWeight">Weight (kg)</label>
+          <input type="number" id="bmiWeight" placeholder="e.g. 70" min="10" max="500">
+        </div>
+      </div>
+      <button class="btn btn-primary bmi-btn ripple" id="calcBmiBtn">Calculate BMI</button>
+      <p class="bmi-error" id="bmiError"></p>
+
+      <div class="bmi-result" id="bmiResult">
+        <div class="bmi-result-value">
+          <span id="bmiValue">0.0</span>
+          <span class="bmi-result-label" id="bmiCategory">&mdash;</span>
+        </div>
+        <div class="bmi-scale">
+          <div class="bmi-scale-bar" id="bmiScaleBar"><span class="bmi-pointer" id="bmiPointer"></span></div>
+          <div class="bmi-scale-labels">
+            <span>Under</span><span>Healthy</span><span>Over</span><span>Obese</span>
+          </div>
+        </div>
+        <p class="bmi-advice" id="bmiAdvice"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== MEMBERSHIP BENEFITS ==================== -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Included With Every Plan</span>
+      <h2 class="section-title">Membership <span class="accent-text">Benefits</span></h2>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-lock"></i>
+        <span>Private Locker</span>
+      </div>
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-water"></i>
+        <span>Steam Bath</span>
+      </div>
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-wifi"></i>
+        <span>Free WiFi</span>
+      </div>
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-square-parking"></i>
+        <span>Free Parking</span>
+      </div>
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-bottle-droplet"></i>
+        <span>Protein Bar</span>
+      </div>
+      <div class="benefit-card reveal-up">
+        <i class="fa-solid fa-clipboard-check"></i>
+        <span>Free Assessment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GALLERY SECTION ==================== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Inside IronPulse</span>
+      <h2 class="section-title">Our <span class="accent-text">Gallery</span></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=600&q=80" alt="Gym interior wide shot" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=600&q=80" alt="Personal trainer coaching a client" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1583468982228-19f19164aee2?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1583468982228-19f19164aee2?auto=format&fit=crop&w=600&q=80" alt="Boxing training session" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?auto=format&fit=crop&w=600&q=80" alt="Dumbbell rack close up" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?auto=format&fit=crop&w=600&q=80" alt="Free weight training area" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=80" alt="Dumbbell storage wall" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=600&q=80" alt="Athlete mid workout" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item reveal-up" data-full="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=600&q=80" alt="Coach spotting a client on bench press" loading="lazy">
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ==================== SUCCESS STORIES ==================== -->
+<section class="success" id="success">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Real Results</span>
+      <h2 class="section-title">Success <span class="accent-text">Stories</span></h2>
+    </div>
+
+    <div class="success-grid">
+      <div class="success-card reveal-up">
+        <div class="success-images">
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Before transformation photo" loading="lazy"><span>Before</span></div>
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&w=500&q=80" alt="After transformation photo" loading="lazy"><span>After</span></div>
+        </div>
+        <h4>James Carter</h4>
+        <span class="success-tag">Weight Lost &mdash; 34 lbs</span>
+        <p>Six months of consistent coaching changed how I move, eat, and think about training.</p>
+      </div>
+
+      <div class="success-card reveal-up">
+        <div class="success-images">
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80" alt="Before transformation photo" loading="lazy"><span>Before</span></div>
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=80" alt="After transformation photo" loading="lazy"><span>After</span></div>
+        </div>
+        <h4>Sophia Ramirez</h4>
+        <span class="success-tag">Muscle Gain &mdash; 14 lbs</span>
+        <p>The strength program rebuilt my confidence as much as my physique.</p>
+      </div>
+
+      <div class="success-card reveal-up">
+        <div class="success-images">
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=500&q=80" alt="Before transformation photo" loading="lazy"><span>Before</span></div>
+          <div class="success-img"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=500&q=80" alt="After transformation photo" loading="lazy"><span>After</span></div>
+        </div>
+        <h4>Daniel Osei</h4>
+        <span class="success-tag">Full Transformation</span>
+        <p>From skipping workouts to leading the 5am CrossFit class &mdash; total lifestyle shift.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Member Voices</span>
+      <h2 class="section-title">What Our <span class="accent-text">Members Say</span></h2>
+    </div>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-slide">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;IronPulse completely changed my relationship with training. The coaches actually pay attention.&rdquo;</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Portrait of Amanda Lee" loading="lazy">
+            <div><h5>Amanda Lee</h5><span>Member since 2022</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;Best equipment I&rsquo;ve used in the city, and the 24/7 access fits my shift schedule perfectly.&rdquo;</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Portrait of Ryan Thompson" loading="lazy">
+            <div><h5>Ryan Thompson</h5><span>Member since 2021</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          <p>&ldquo;The nutrition plan alone was worth the membership. I finally understand how to eat for my goals.&rdquo;</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Portrait of Grace Kim" loading="lazy">
+            <div><h5>Grace Kim</h5><span>Member since 2023</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;Clean, motivating, and never overcrowded. IronPulse feels like a private club at a gym price.&rdquo;</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="Portrait of Marcus Webb" loading="lazy">
+            <div><h5>Marcus Webb</h5><span>Member since 2020</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ SECTION ==================== -->
+<section class="faq" id="faq">
+  <div class="container faq-container">
+    <div class="section-header reveal-up">
+      <span class="eyebrow">Questions</span>
+      <h2 class="section-title">Frequently <span class="accent-text">Asked</span></h2>
+    </div>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item reveal-up">
+        <button class="accordion-header">
+          <span>What membership options do you offer?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="accordion-panel">
+          <p>We offer Basic, Standard and Premium monthly memberships, plus day passes and corporate packages. Every plan includes full gym floor access.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal-up">
+        <button class="accordion-header">
+          <span>Do I need a trainer to get started?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="accordion-panel">
+          <p>No, but every new member receives a complimentary orientation session with a coach to build confidence with the equipment and set initial goals.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal-up">
+        <button class="accordion-header">
+          <span>What payment methods do you accept?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="accordion-panel">
+          <p>We accept all major credit and debit cards, as well as bank transfer for annual plans. Payments are processed securely through our front desk or member app.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal-up">
+        <button class="accordion-header">
+          <span>Can I cancel or pause my membership?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. Monthly plans can be cancelled anytime with 15 days&rsquo; notice, and you may pause your membership for up to two months per year at no charge.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item reveal-up">
+        <button class="accordion-header">
+          <span>What are your operating hours?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="accordion-panel">
+          <p>Premium and Standard members enjoy 24/7 keycard access. The staffed front desk and group classes run daily from 5am to 11pm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal-left">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Start Your <span class="accent-text">Journey Today</span></h2>
+      <p class="section-text">Drop by the floor, call the front desk, or send a message &mdash; our team responds within one business day.</p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h5>Address</h5><p>221 Ironwood Avenue, Austin, TX 73301</p></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone"></i>
+          <div><h5>Phone</h5><p>+1 (555) 010-2024</p></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h5>Email</h5><p>hello@ironpulsefitness.com</p></div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-clock"></i>
+          <div><h5>Hours</h5><p>Open 24/7 for Standard &amp; Premium members</p></div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe title="IronPulse Fitness location map" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.7531%2C30.2472%2C-97.7331%2C30.2672&layer=mapnik" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-right" id="contactForm" novalidate>
+      <h3>Send A Message</h3>
+
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="John Anderson">
+        <span class="form-error" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com">
+        <span class="form-error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 010-2024">
+        <span class="form-error" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals..."></textarea>
+        <span class="form-error" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary form-submit ripple">Send Message</button>
+      <p class="form-success" id="formSuccess">Thanks &mdash; your message has been sent. We&rsquo;ll be in touch soon.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+        <span class="logo-text">IRON<span class="accent-text">PULSE</span></span>
+      </a>
+      <p>Premium training for people serious about becoming their strongest self.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="#about">About</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Programs</h5>
+      <a href="#programs">Strength Training</a>
+      <a href="#programs">CrossFit</a>
+      <a href="#programs">Yoga</a>
+      <a href="#programs">HIIT</a>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h5>Newsletter</h5>
+      <p>Get training tips and offers in your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> IronPulse Fitness. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ==================== BACK TO TOP ==================== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>

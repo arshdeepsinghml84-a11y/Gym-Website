@@ -1,0 +1,17 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
+
+# Environment files (secrets) - never commit these
+.env
+.env.*
+!.env.example
+
+# Dependencies (only relevant if you add npm packages later)
+node_modules/
